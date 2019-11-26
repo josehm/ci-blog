@@ -29,8 +29,8 @@ docker-deploy-image:
     - docker:dind
   script:
     - echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin # (5)
-    - docker build -t andrewbestbier/ci-comparison-blog .
-    - docker push andrewbestbier/ci-comparison-blog
+    - docker build -t josehm/ci-blog .
+    - docker push josehm/ci-blog
 
 aws-deploy:
   image: 'python:latest'
@@ -38,4 +38,4 @@ aws-deploy:
   before_script:
     - 'pip install awsebcli --upgrade' # (6)
   script:
-    - eb deploy CiComparisonBlog-env
+    - eb deploy ci-blog

@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndrewBestbier/ci-comparison-blog.git"
+    "url": "git+https://github.com/josehm/ci-blog.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AndrewBestbier/ci-comparison-blog/issues"
+    "url": "https://github.com/josehm/ci-blog/issues"
   },
-  "homepage": "https://github.com/AndrewBestbier/ci-comparison-blog#readme",
+  "homepage": "https://github.com/josehm/ci-blog#readme",
   "dependencies": {
     "express": "^4.17.1",
     "mocha": "^6.2.1"
